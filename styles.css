@@ -1,6 +1,26 @@
 body {
     background-color: rgb(242, 245, 253);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 60%;
+}
+
+.homepage {
+    background-color: #FFE9E4;
+
+}
+
 
 /*
 .home-button {
