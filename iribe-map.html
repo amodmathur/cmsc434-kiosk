@@ -10,59 +10,68 @@
     <title>Iribe Kiosk</title>
 </head>
 <body>
-    <!-- Introduction Statement -->
-    <h1 style="text-align: center;">Brendan Iribe Center - Building Directory</h1>
+    <div class="iribe-map">
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="calendar.html">Calendar</a>
+            <a href="campus-map.html">Campus Map</a>
+            <a href="iribe-map.html">Iribe Map</a>
+            <a href="prof-office.html">Professor Offices</a>
+            <a href="class-schedule.html">Class Schedule</a>
+            <a href="awards.html">Awards and Accomplishments</a>
+            <a href="office-hours.html">Office Hours</a>
+        </div>
+        <div class="inner-iribe-map">
+            <!-- Creating a Navigation Bar for the Floor Plans!-->
+            <ul>
+                <li><a href="Iribe_FloorPlan/Iribe_Basement.pdf">Basement Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_GroundFloor.pdf">Ground Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_Mezzanine.pdf">Mezzanine</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_FirstFloor.pdf">First Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_SecondFloor.pdf">Second Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_ThirdFloor.pdf">Third Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_FourthFloor.pdf">Fourth Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_FifthFloor.pdf">Fifth Floor</a></li>
+                <li><a href="Iribe_FloorPlan/Iribe_SixthFloor.pdf">Sixth Floor</a></li>
+                <li style="float:right"><a class="active" href="index.html">Home</a></li>
+            </ul>
+            <!-- Introduction Statement -->
+            <h1 style="text-align: center;">Brendan Iribe Center - Building Directory</h1>
 
-    <!-- Creating a Navigation Bar for the Floor Plans!-->
-    <ul>
-        <li><a href="Iribe_FloorPlan/Iribe_Basement.pdf">Basement Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_GroundFloor.pdf">Ground Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_Mezzanine.pdf">Mezzanine</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_FirstFloor.pdf">First Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_SecondFloor.pdf">Second Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_ThirdFloor.pdf">Third Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_FourthFloor.pdf">Fourth Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_FifthFloor.pdf">Fifth Floor</a></li>
-        <li><a href="Iribe_FloorPlan/Iribe_SixthFloor.pdf">Sixth Floor</a></li>
-        <li style="float:right"><a class="active" href="index.html">Home</a></li>
-    </ul>
+            <div class='parent-split-iribe-map'>
+                <div class='split-iribe-map'>
+                    <img src="Iribe_FloorPlan/Iribe_Building.jpg" alt="Iribe Center Building" height="400" class="center_image">
+                </div>
+                <div class='split-iribe-map'>
+                    <div class="intro_section">
+                        <p>
+                            Welcome to the Brendan Iribe Center Directory page! This is where you will find a floorplan for every single 
+                            floor located within the Iribe Center. For now these pages are PDF files, which allow you to scroll around and 
+                            zoom in on certain areas that you want yo look at. In the future, I plan on converting these PDF's to images,
+                            utilizing a website that I found called 'image-map.net' that will allow me to make these images interactable. This 
+                            will allow the user to click on specific rooms to see professor offices, etc.
+                        </p>
+                    </div>
+                </div>
+              </div>
+            <!-- Iribe Center Thumbnail -->
 
-    <!-- 'Return to Home' Button 
-    <div class="home-button">
-        <button class="home-button" onclick="window.location.href='index.html';">
-            Return to Home Screen!
-        </button>
-    </div> -->
+            <!-- Intro to the Building's Thumbnail -->
+            
 
-    <br>
-    <br>
+            <!-- Whitespace creation -->
+            <br>
+            <br>
+            <br>
+            <br>
 
-    <!-- Iribe Center Thumbnail -->
-    <img src="Iribe_FloorPlan/Iribe_Building.jpg" alt="Iribe Center Building" height="400" class="center_image">
-
-    <!-- Intro to the Building's Thumbnail -->
-    <div class="intro_section">
-        <p>
-            Welcome to the Brendan Iribe Center Directory page! This is where you will find a floorplan for every single 
-            floor located within the Iribe Center. For now these pages are PDF files, which allow you to scroll around and 
-            zoom in on certain areas that you want yo look at. In the future, I plan on converting these PDF's to images,
-            utilizing a website that I found called 'image-map.net' that will allow me to make these images interactable. This 
-            will allow the user to click on specific rooms to see professor offices, etc.
-        </p>
+            <!-- 'View Certain Floor Plan' Button -->
+            <div class="prof-office-button">
+                <button onclick="window.location.href='prof-office.html';">
+                    View the CS Professor Directory!
+                </button>
+            </div>
+        </div>
     </div>
-
-    <!-- Whitespace creation -->
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <!-- 'View Certain Floor Plan' Button -->
-    <div class="prof-office-button">
-        <button onclick="window.location.href='prof-office.html';">
-            View the CS Professor Directory!
-        </button>
-    </div>
-
 </body>
 </html>

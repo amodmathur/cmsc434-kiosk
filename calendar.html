@@ -11,16 +11,26 @@
     <title>Iribe Kiosk</title>
 </head>
 <body>
-    <h1 style="text-align: center;">What's Happening at Iribe - Calendar</h1>
-    <div>
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <a href="calendar.html">Calendar</a>
+      <a href="campus-map.html">Campus Map</a>
+      <a href="iribe-map.html">Iribe Map</a>
+      <a href="prof-office.html">Professor Offices</a>
+      <a href="class-schedule.html">Class Schedule</a>
+      <a href="awards.html">Awards and Accomplishments</a>
+      <a href="office-hours.html">Office Hours</a>
+    </div>
+    <div class="calendar">
+      <div>
         <ul>
-            <li style="float:right"><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html">Day Calendar</a></li>
+          <li><a href="index.html">Week Calendar</a></li>
+          <li style="float:right"><a class="active" href="index.html">Home</a></li>
         </ul>
     </div>
-    <br>
 
-
-    <div class="calendar">
+      <h1 style="text-align: center;">What's Happening at Iribe - Calendar</h1>
   
         <header>
             <div class="calendar__title" style="display: flex; justify-content: center; align-items: center">
@@ -38,10 +48,10 @@
             <th class="headcol"></th>
             <th>Sun, 24</th>
             <th>Mon, 25</th>
-            <th class="today">Tue, 26</th>
+            <th>Tue, 26</th>
             <th>Wed, 27</th>
             <th>Thu, 28</th>
-            <th>Fri, 29</th>
+            <th class="today">Fri, 29</th>
             <th>Sat, 30</th>
           </tr>
         </thead>
@@ -54,7 +64,9 @@
           <tr>
             <td class="headcol">6:00</td>
             <td></td>
-            <td></td>
+            <td>
+              <div class="event double"><input id="check" type="checkbox" class="checkbox" /><label for="check"></label>6:00–7:00 Iribe Club Meeting</div></td>
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -316,6 +328,5 @@
       </div>
       </div>
       </div>
-      
 </body>
 </html>
