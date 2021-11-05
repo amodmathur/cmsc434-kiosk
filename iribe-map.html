@@ -23,16 +23,35 @@
         </div>
         <div class="inner-iribe-map">
             <!-- Creating a Navigation Bar for the Floor Plans!-->
+            <!-- Currently popup windows, may want to embed into html file that is still part of OUR HTML! -->
             <ul>
-                <li><a href="Iribe_FloorPlan/Iribe_Basement.pdf">Basement Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_GroundFloor.pdf">Ground Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_Mezzanine.pdf">Mezzanine</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_FirstFloor.pdf">First Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_SecondFloor.pdf">Second Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_ThirdFloor.pdf">Third Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_FourthFloor.pdf">Fourth Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_FifthFloor.pdf">Fifth Floor</a></li>
-                <li><a href="Iribe_FloorPlan/Iribe_SixthFloor.pdf">Sixth Floor</a></li>
+                <li><a href="Floorplan_HTML/Iribe_Basement.html" target="popup" 
+                    onclick="window.open('Floorplan_HTML/Iribe_Basement.html', 'popup', 'width=1100, height=770');
+                    return false;">Basement (B0xxx)</a></li>
+                <li><a href="Floorplan_HTML/Iribe_GroundFloor.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_GroundFloor.html', 'popup', 'width=1100, height=770');
+                    return false;">Ground (0xxx)</a></li>
+                <li><a href="Floorplan_HTML/Iribe_Mezzanine.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_Mezzanine.html', 'popup', 'width=1100, height=770');
+                    return false;">Mezzanine</a></li>
+                <li><a href="Floorplan_HTML/Iribe_First.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_First.html', 'popup', 'width=1100, height=770');
+                    return false;">First (1xxx)</a></li>
+                <li><a href="FloorPLan_HTML/Iribe_Second.html" target="popup"
+                    onclick="window.open('FloorPLan_HTML/Iribe_Second.html', 'popup', 'width=1100, height=770');
+                    return false;">Second (2xxx)</a></li>
+                <li><a href="Floorplan_HTML/Iribe_Third.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_Third.html', 'popup', 'width=1100, height=770'); 
+                    return false;">Third (3xxx)</a></li>
+                <li><a href="Floorplan_HTML/Iribe_Fourth.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_Fourth.html', 'popup', 'width=1100, height=770');
+                    return false;">Fourth (4xxx)</a></li>
+                <li><a href="Floorplan_HTML/Iribe_Fifth.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_Fifth.html', 'popup', 'width=1100, height=770');
+                    return false;">Fifth (5xxx)</a></li>
+                <li><a href="Floorplan_HTML/Iribe_Sixth.html" target="popup"
+                    onclick="window.open('Floorplan_HTML/Iribe_Sixth.html', 'popup', 'width=1100, height=770');
+                    return false;">Sixth (6xxx)</a></li>
                 <li style="float:right"><a class="active" href="index.html">Home</a></li>
             </ul>
             <!-- Introduction Statement -->
@@ -42,14 +61,15 @@
                 <div class='split-iribe-map'>
                     <img src="Iribe_FloorPlan/Iribe_Building.jpg" alt="Iribe Center Building" height="400" class="center_image">
                 </div>
-                <div class='split-iribe-map'>
+                <div class='parent-split-iribe-map'>
                     <div class="intro_section">
                         <p>
-                            Welcome to the Brendan Iribe Center Directory page! This is where you will find a floorplan for every single 
-                            floor located within the Iribe Center. For now these pages are PDF files, which allow you to scroll around and 
-                            zoom in on certain areas that you want yo look at. In the future, I plan on converting these PDF's to images,
-                            utilizing a website that I found called 'image-map.net' that will allow me to make these images interactable. This 
-                            will allow the user to click on specific rooms to see professor offices, etc.
+                            A hub for technology, collaboration, and discovery at the heart of a new innovation district, the Brendan Iribe Center for 
+                            Computer Science and Engineering embodies UMD's excellence in both of these fields while also providing a space for students, 
+                            faculty, and staff alike to contribute and be part of the future. Open work areas, makerspaces, and flexible classrooms (including
+                            our 100-seat and 300-seat auditoriums) promote teamwork and active learning. Outside of the basement and the sixth floor, students 
+                            are welcome to utilize conference rooms, common study areas, classrooms, as well as visit professor offices (visit tab)
+                            in order to complete all of their work.
                         </p>
                     </div>
                 </div>
@@ -65,12 +85,6 @@
             <br>
             <br>
 
-            <!-- 'View Certain Floor Plan' Button -->
-            <div class="prof-office-button">
-                <button onclick="window.location.href='prof-office.html';">
-                    View the CS Professor Directory!
-                </button>
-            </div>
         </div>
     </div>
 </body>
