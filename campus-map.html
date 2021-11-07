@@ -29,51 +29,18 @@
         <a href="office-hours.html"><button type="button">Office Hours</button></a>
     </div>
     
+    
     <div class="campus-map">
         <ul>
             <li style="float:right"><a class="active" href="index.html">Home</a></li>
         </ul>
+
+        <h1 style="text-align: center;">Campus Map</h1>
+
         <div class="imgbox">
             <div class="box">
-                <img class="center-fit" src='Campus_Map/CampusMap.png' GFG="250" id="campus-map">
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.1488335298454!2d-76.93870328536015!3d38.989099449139985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c7e9e636ed11%3A0x9aaf14503032f4a!2sBrendan%20Iribe%20Center%20for%20Computer%20Science%20and%20Engineering!5e0!3m2!1sen!2sus!4v1636328036878!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            </div>
         </div>
-
-        <script type="text/javascript">
-            function zoomin() {
-                var GFG = document.getElementById("campus-map");
-                var currWidth = GFG.clientWidth;
-                var currHeight = GFG.clientHeight;
-
-                GFG.style.width = (currWidth + 100) + "px";
-                GFG.style.height = (currHeight + 100) + "px";
-
-            }
-            
-            function zoomout() {
-                var GFG = document.getElementById("campus-map");
-                var currWidth = GFG.clientWidth;
-                var currHeight = GFG.clientHeight;
-
-                GFG.style.width = (currWidth - 100) + "px";
-                GFG.style.height = (currHeight - 100) + "px";
-
-            }
-        </script>
-	
-	
-        <div>
-            <div id="backdrop" style="z-index: 1; position: absolute; top: 100px; left: 200px;">
-                <button type="button" onclick="zoomin()">
-                    Zoom-In
-                </button>
-                <button type="button" onclick="zoomout()">
-                    Zoom-Out
-                </button>
-            </div>
-        </div>
-	
-	
     </div>  
 
 </body>
