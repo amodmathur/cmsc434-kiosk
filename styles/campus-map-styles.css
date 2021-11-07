@@ -14,7 +14,9 @@
 
 .campus-map {
     background-color: #FFE9E4;
-  
+
+
+    text-align: center;
     margin: 10 auto;
     margin-left: 200px;
     max-width: 1280px;

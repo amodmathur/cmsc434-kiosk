@@ -6,15 +6,18 @@
     margin-left:200px;
 }
 
-.parent-split-iribe-map {
-    text-align: center;
-}
-.split-iribe-map {
-    border: 1px solid red;
-    display: inline-block;
-}
-
 /* Styling the intro paragraph */
 .intro_section {
+    padding: 0px 70px;
     text-align: center;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}  
