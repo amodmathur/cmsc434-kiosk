@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Iribe Kiosk</title>
 </head>
 <body>
-    <h1>Here is the map of campus.</h1>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="calendar.html"><button type="button">Calendar</button></a>
+        <a href="campus-map.html"><button type="button">Campus Map</button></a>
+        <a href="iribe-map.html"><button type="button">Iribe Map</button></a>
+        <a href="prof-office.html"><button type="button">Professor Offices</button></a>
+        <a href="class-schedule.html"><button type="button">Class Schedule</button></a>
+        <a href="awards.html"><button type="button">Awards and Accomplishments</button></a>
+        <a href="office-hours.html"><button type="button">Office Hours</button></a>
+    </div>
+    
+    <div class="imgbox">
+        <img class="center-fit" src='Campus_Map/CampusMap.png'>
+    </div>
+
+    <ul>
+        <li style="float:right"><a class="active" href="index.html">Home</a></li>
+    </ul>
+
+
 
     <h2> 
         <a href="index.html">Return to home</a>
