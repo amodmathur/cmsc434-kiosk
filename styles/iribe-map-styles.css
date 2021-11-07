@@ -1,0 +1,20 @@
+.iribe-map {
+    background-color: #FFE9E4;   
+}
+
+.inner-iribe-map {
+    margin-left:200px;
+}
+
+.parent-split-iribe-map {
+    text-align: center;
+}
+.split-iribe-map {
+    border: 1px solid red;
+    display: inline-block;
+}
+
+/* Styling the intro paragraph */
+.intro_section {
+    text-align: center;
+}

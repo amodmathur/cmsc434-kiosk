@@ -1,7 +1,6 @@
 html {
     margin: 0;
     height: 100%;
-    overflow: hidden
 }
 
 * {
@@ -30,33 +29,12 @@ body {
     width: 60%;
 }
 
-.homepage {
-    background-color: #FFE9E4;
-}
-
 .index-page {
     margin-left:200px;
 }
 
-.iribe-map {
-    background-color: #FFE9E4;
-    
-}
-
 .calendar {
     background-color: #FFE9E4;
-}
-
-.inner-iribe-map {
-    margin-left:200px;
-}
-
-.parent-split-iribe-map {
-    text-align: center;
-}
-.split-iribe-map {
-    border: 1px solid red;
-    display: inline-block;
 }
 
 /*
@@ -124,15 +102,6 @@ li a:hover {
     width: 60%;
 }
 
-/* Styling the intro paragraph */
-.intro_section {
-    text-align: center;
-}
-
-div {
-    overflow: hidden;
-}
-
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -155,10 +124,6 @@ div {
     display: block;
   }
   
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #818181;
-  }
   
   /* Style page content */
   .main {
@@ -172,13 +137,29 @@ div {
     .sidenav a {font-size: 18px;}
   }
 
-  .sidenav-buttons {
+  .sidenav button {
     text-decoration: none;
-    background-color: #f1e31a;
     color: #333333;
     padding: 1px 1px 1px 1px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
+    min-width: 170px;
+    text-align: center;
   }
+
+  /*button {
+	border: none;
+	padding: 1.1em 6.5em;
+	background: #00abc6;
+	color: #fff;
+	font-family: 'TitilliumText22LRegular', Arial, sans-serif;
+	font-weight:bold;
+	font-size: 1.1em;
+	border-radius: 0px;
+}
+
+button:hover {
+	background: #3E3E3E;
+}*/

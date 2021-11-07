@@ -4,50 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .imgbox {
-            display: grid;
-            height: 100%;
-        }
-        .center-fit {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-        }
-    </style>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/campus-map-styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Iribe Kiosk</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+	</script>
+    <title>Iribe Kiosk: Campus Map</title>
 </head>
 <body>
     <!-- Side navigation -->
     <div class="sidenav">
         <a href="calendar.html"><button type="button">Calendar</button></a>
+        <br>
         <a href="campus-map.html"><button type="button">Campus Map</button></a>
+        <br>
         <a href="iribe-map.html"><button type="button">Iribe Map</button></a>
+        <br>
         <a href="prof-office.html"><button type="button">Professor Offices</button></a>
+        <br>
         <a href="class-schedule.html"><button type="button">Class Schedule</button></a>
+        <br>
         <a href="awards.html"><button type="button">Awards and Accomplishments</button></a>
+        <br>
         <a href="office-hours.html"><button type="button">Office Hours</button></a>
     </div>
     
-    <div class="imgbox">
-        <img class="center-fit" src='Campus_Map/CampusMap.png'>
-    </div>
+    <div class="campus-map">
+        <ul>
+            <li style="float:right"><a class="active" href="index.html">Home</a></li>
+        </ul>
+        <div class="imgbox">
+            <div class="box">
+                <img class="center-fit" src='Campus_Map/CampusMap.png' GFG="250" id="campus-map">
+            </div>
+        </div>
 
-    <ul>
-        <li style="float:right"><a class="active" href="index.html">Home</a></li>
-    </ul>
+        <script type="text/javascript">
+            function zoomin() {
+                var GFG = document.getElementById("campus-map");
+                var currWidth = GFG.clientWidth;
+                var currHeight = GFG.clientHeight;
 
+                GFG.style.width = (currWidth + 100) + "px";
+                GFG.style.height = (currHeight + 100) + "px";
 
+            }
+            
+            function zoomout() {
+                var GFG = document.getElementById("campus-map");
+                var currWidth = GFG.clientWidth;
+                var currHeight = GFG.clientHeight;
 
-    <h2> 
-        <a href="index.html">Return to home</a>
-    </h2>
+                GFG.style.width = (currWidth - 100) + "px";
+                GFG.style.height = (currHeight - 100) + "px";
+
+            }
+        </script>
+	
+	
+        <div>
+            <div id="backdrop" style="z-index: 1; position: absolute; top: 100px; left: 200px;">
+                <button type="button" onclick="zoomin()">
+                    Zoom-In
+                </button>
+                <button type="button" onclick="zoomout()">
+                    Zoom-Out
+                </button>
+            </div>
+        </div>
+	
+	
+    </div>  
+
 </body>
 </html>
