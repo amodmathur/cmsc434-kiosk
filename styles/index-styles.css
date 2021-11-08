@@ -1,3 +1,17 @@
 .homepage {
     background-color: #FFE9E4;
 }
+
+.index-page {
+    margin-left:200px;
+    padding: 20px;
+}
+
+.list-unstyled {
+    background-color: white;
+    color: black;
+}
+
+.card-columns {
+    column-count:2;
+  }
