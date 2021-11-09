@@ -46,7 +46,7 @@
             <script>
 
                 const officeMap = new Map();
-                officeMap.set('Dr. Evan Golub', ["IRB4XXX"])
+                officeMap.set('Dr. Evan Golub', ["IRB1210"])
                 officeMap.set('Mr. Larry Herman', ["IRB2XXX"])
                 officeMap.set('Dr. Dave Mount', ["IRB5XXX"])
             
@@ -66,19 +66,19 @@
                     var e = document.getElementById("office-location")
             
                     e.innerHTML = "Location: " + faculty[0]
-                    if (faculty[0] == "IRB4XXX") {
+                    if (faculty[0] == "IRB1210") {
                         show_image("prof_pics/Golub.jpg")
+                    } else if (faculty[0] == "IRB5XXX") {
+                        show_image("prof_pics/Mount.jpg")
+                    } else if (faculty[0] == "IRB2XXX") {
+                        show_image("prof_pics/Herman.png")
                     }
                 }
 
                 function show_image(src) {
-                    var img = document.createElement("img");
+                    var img = document.getElementById("prof-pic");
                     img.src = src;
-                    img.width=500;
-                    img.height=500;
 
-
-                    document.body.appendChild(img);
                 }
             
             </script>
@@ -96,6 +96,7 @@
             <h3></h3>
 
             <p id="office-location"></p>
+            <img id="prof-pic"/>
 
         </div>
     </body>
