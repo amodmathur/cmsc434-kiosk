@@ -1,0 +1,106 @@
+.office-hours {
+    margin-left: 200px;
+}
+
+.background {
+    /*background-color: rgb(242, 245, 253);*/
+    background-color: #FFE9E4;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    height: 100%; 
+    overflow: hidden
+}
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #333; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #110303;
+    display: block;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+    
+    .sidenav button {
+    text-decoration: none;
+    color: #333333;
+    padding: 1px 1px 1px 1px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* Styling the Top Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-size: 16px;
+}
+/* Styling the links themselves */ 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    list-style-position:inside;
+    border: 1px solid white;
+}
+
+/* Styling the links on hover */
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Styling the home button top right so user knows it is the currently selected one */
+.active {
+    background-color: gold;
+    color: black;
+}
+
+.top-home-bar {
+    background-color: #FFE9E4;
+
+    text-align: center;
+    margin: 10 auto;
+    margin-left: 200px;
+    max-width: 1280px;
+    min-width: 500px;
+  
+    /* box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2) , 0px 3px 7px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+    
