@@ -55,17 +55,6 @@ li a {
     border: 1px solid white;
 }
 
-/* Styling the links on hover */
-li a:hover {
-    background-color: white;
-    color: black;
-}
-
-/* Styling the home button top right so user knows it is the currently selected one */
-.active {
-    background-color: gold;
-    color: black;
-}
 
 /* Styling the image */
 .center_image {
@@ -90,7 +79,7 @@ li a:hover {
 
 /* The navigation menu links */
 .sidenav a {
-padding: 6px 8px 6px 10px;
+padding: 20px 8px 6px 10px;
 text-decoration: none;
 font-size: 22px;
 color: #110303;
@@ -121,4 +110,8 @@ border-bottom: 1px solid #333333;
 border-left: 1px solid #CCCCCC;
 min-width: 180px;
 text-align: center;
+}
+
+.current {
+    background-color: #ffff69;
 }
