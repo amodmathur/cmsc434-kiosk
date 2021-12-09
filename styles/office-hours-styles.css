@@ -11,22 +11,4 @@
     height: 100%; 
     overflow: hidden
 }
-
-.top-home-bar {
-    background-color: #FFE9E4;
-
-    text-align: center;
-    margin: 10 auto;
-    max-width: 1280px;
-    min-width: 500px;
-  
-    /* box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2) , 0px 3px 7px rgba(0, 0, 0, 0.1); */
-    border-radius: 8px;
-}
-
-.center-fit {
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
-}
     
