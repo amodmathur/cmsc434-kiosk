@@ -10,7 +10,7 @@
 
     <title>Iribe Kiosk: Iribe Map</title>
 </head>
-<body>
+<body class="iribe-map">
     <div class="iribe-map">
         <!-- Side navigation -->
     <div class="sidenav">
@@ -62,38 +62,20 @@
                 Office Hours
             </button>
         </a>
-      </div>
+    </div>
         <div class="inner-iribe-map">
             <!-- Creating a Navigation Bar for the Floor Plans!-->
             <!-- Currently popup windows, may want to embed into html file that is still part of OUR HTML! -->
             <ul>
-                <li><a href="Floorplan_HTML/Iribe_Basement.html" target="popup" 
-                    onclick="window.open('Floorplan_HTML/Iribe_Basement.html', 'popup', 'width=1100, height=770');
-                    return false;">Basement (B0)</a></li>
-                <li><a href="Floorplan_HTML/Iribe_GroundFloor.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_GroundFloor.html', 'popup', 'width=1100, height=770');
-                    return false;">Ground (0)</a></li>
-                <li><a href="Floorplan_HTML/Iribe_Mezzanine.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_Mezzanine.html', 'popup', 'width=1100, height=770');
-                    return false;">Mezzanine</a></li>
-                <li><a href="Floorplan_HTML/Iribe_First.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_First.html', 'popup', 'width=1100, height=770');
-                    return false;">First (1)</a></li>
-                <li><a href="FloorPLan_HTML/Iribe_Second.html" target="popup"
-                    onclick="window.open('FloorPLan_HTML/Iribe_Second.html', 'popup', 'width=1100, height=770');
-                    return false;">Second (2)</a></li>
-                <li><a href="Floorplan_HTML/Iribe_Third.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_Third.html', 'popup', 'width=1100, height=770'); 
-                    return false;">Third (3)</a></li>
-                <li><a href="Floorplan_HTML/Iribe_Fourth.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_Fourth.html', 'popup', 'width=1100, height=770');
-                    return false;">Fourth (4)</a></li>
-                <li><a href="Floorplan_HTML/Iribe_Fifth.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_Fifth.html', 'popup', 'width=1100, height=770');
-                    return false;">Fifth (5)</a></li>
-                <li><a href="Floorplan_HTML/Iribe_Sixth.html" target="popup"
-                    onclick="window.open('Floorplan_HTML/Iribe_Sixth.html', 'popup', 'width=1100, height=770');
-                    return false;">Sixth (6)</a></li>
+                <li><a href="Update_Floorplan_HTML/Basement.html">Basement (B0)</a></li>
+                <li><a href="Update_Floorplan_HTML/Ground.html">Ground (0)</a></li>
+                <li><a href="Update_Floorplan_HTML/Mezzanine.html">Mezzanine</a></li>
+                <li><a href="Update_Floorplan_HTML/First.html">First (1)</a></li>
+                <li><a href="Update_Floorplan_HTML/Second.html">Second (2)</a></li>
+                <li><a href="Update_Floorplan_HTML/Third.html">Third (3)</a></li>
+                <li><a href="Update_Floorplan_HTML/Fourth.html">Fourth (4)</a></li>
+                <li><a href="Update_Floorplan_HTML/Fifth.html">Fifth (5)</a></li>
+                <li><a href="Update_Floorplan_HTML/Sixth.html">Sixth (6)</a></li>
             </ul>
             <!-- Introduction Statement -->
             <h1 style="text-align: center;">Brendan Iribe Center - Building Directory</h1>
@@ -102,12 +84,12 @@
             <div class="flex-container">
 
                 <div class="flex-child">
-                    <img src="Iribe_FloorPlan/Iribe_Building.jpg" alt="Iribe Center Building" height="400" class="center_image">
+                    <img src="Iribe_FloorPlan/Iribe_Building.jpg" alt="Iribe Center Building" height="350" class="center_image">
                 </div>
                 
-                <div class="flex-child">
-                    <div class="intro_section">
-                        <p>
+                <div style="flex-grow: 1;">
+                    <div class="card" style="width: 25rem; padding: 10px 10px; position:relative; left: 285px; top: 40px;">
+                        <p class="card-text">
                             A hub for technology, collaboration, and discovery at the heart of a new innovation district, the Brendan Iribe Center for 
                             Computer Science and Engineering embodies UMD's excellence in both of these fields while also providing a space for students, 
                             faculty, and staff alike to contribute and be part of the future. Open work areas, makerspaces, and flexible classrooms (including
@@ -115,11 +97,23 @@
                             are welcome to utilize conference rooms, common study areas, classrooms, as well as visit faculty offices (visit tab)
                             in order to complete all of their work.
                         </p>
-                </div>               
-             </div>
-                
-              </div>
+                    </div>
 
+                </div>            
+            </div>
+
+            <div style="flex-grow: 1;">
+                <div class="card">
+                    <p class="card-text" style="margin-left: 15px; padding: 15px 15px;">
+                        In order to navigate your way through the floorplans, simply click on the top bar for the specific floor you are looking for! The room numbers will start with one 
+                        of the following options:
+                        <b>B0</b> for <u>basement</u>, <b>0</b> for <u>the ground floor</u>, <b>1</b> for <u>the first floor</u>, <b>2</b> for <u>the second floor</u>, <b>3</b> for 
+                        <u>the third floor</u>, <b>4</b> for <u>the fourth floor</u>, <b>5</b> for <u>the fifth floor</u>, and <b>6</b> for <u>the sixth floor</u>. For example, if the room 
+                        you are looking for is "2107", you will want to navigate to the second floor floorplan! In addition, you can use the arrows to dynamically change the floor you are 
+                        viewing.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
