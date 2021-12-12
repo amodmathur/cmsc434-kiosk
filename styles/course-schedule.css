@@ -156,11 +156,11 @@
   }
   
   .event {
-    background: rgb(252, 4, 4);
+    background: rgb(0, 0, 0);
     color: white;
     border-radius: 2px;
     text-align: left;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     z-index: 2;
     padding: 0.5rem;
     overflow-x: hidden;
@@ -170,7 +170,7 @@
   
   .event:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    background: #000000;
+    background: #ff0000;
   }
   
   .event.double {
@@ -179,12 +179,12 @@
   
   .button {
     font-size: 1em;
-    background: rgb(248, 3, 3);
+    background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    border: 2px solid #eb1b1b;
+    border: 2px solid #000000;
     border-radius: 2px;
     text-align: left;
-    font-size: 0.825rem;
+    font-size: .75rem;
     z-index: 2;
     padding: 0.5rem;
     overflow-x: hidden;
@@ -205,7 +205,7 @@
   }
   .overlay:target {
     visibility: visible;
-    opacity: 1;
+    opacity: 1000;
   }
   
   .popup {
